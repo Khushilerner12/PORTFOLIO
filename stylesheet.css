@@ -1,0 +1,593 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.navbar a.active {
+    color: #f39c12;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+.header-image {
+    flex-shrink: 0;
+    /* Adjust width as needed */
+ } 
+
+.header-image img { 
+    height: 40px; /*Adjust as needed
+    width: auto;  /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: for a circular image */
+}
+.home {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-content .text {
+    color: #f39c12;
+}
+
+.home-sci a {
+    color: #333;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.home-sci a:hover {
+    color: #f39c12;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f39c12;
+    color: #f39c12;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn-box:hover {
+    background: #f39c12;
+    color: #fff;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 300px;
+    float: right;
+    position:absolute;
+    top: 0; 
+    right: 0;
+    margin-top: 90px;
+    /* margin-right: 30px;
+    margin-bottom: 20px;
+    vertical-align:top; */
+}
+
+.img-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .img-box img {
+    border-radius: 50%;
+    width: 200px;
+} */
+
+
+
+/* Container Styling */
+.about-text {
+    text-align: center; /* Center-align text inside the container */
+    max-width: 800px; /* Optional: Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Heading 2 Styling */
+.about-text h2 {
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Span inside Heading 2 Styling */
+.about-text h2 span {
+    /* color: #007BFF; Color for the "Me" part */
+    font-weight: bold; /* Optional: make it bold */
+}
+
+/* Heading 4 Styling */
+.about-text h4 {
+    font-size: 24px; /* Adjust font size as needed */
+    /* color: #555; Optional: color for the subtitle */
+    margin-bottom: 20px; /* Space below the subtitle */
+}
+
+/* Paragraph Styling */
+.about-text p {
+    font-size: 16px; /* Adjust font size as needed */
+    /* color: #333; Text color for better readability */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Button Styling */
+.btn-box {
+    display: inline-block; /* Allow margin and padding */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007BFF; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for the button text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-box:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Centering and Styling the Heading */
+.sub-tittle {
+    text-align: center; /* Center-align the text */
+    font-size: 24px; /* Adjust font size as needed */
+    margin: 20px 0; /* Space above and below the heading */
+    position: relative; /* Needed for positioning the underline */
+}
+
+/* Styling the Span with Underline */
+.sub-tittle .underline {
+    position: relative; /* Needed for positioning the underline */
+    display: inline-block; /* Ensure the underline is only as wide as the text */
+    font-weight: bold; /* Optional: make the text bold */
+}
+
+/* Underline Styling */
+.sub-tittle .underline::after {
+    content: ''; /* No text content */
+    display: block; /* Make the pseudo-element a block element */
+    width: 100%; /* Underline width matches the text width */
+    height: 2px; /* Height of the underline */
+    background-color: #007BFF; /* Color of the underline, adjust as needed */
+    position: absolute; /* Position it absolutely relative to the span */
+    bottom: -4px; /* Position it slightly below the text */
+    left: 0; /* Align with the start of the text */
+}
+
+
+/* Container styles */
+.container1 {
+    margin: 20px;
+}
+
+.heading1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox styling for centering */
+.Technical-bars {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap; /* Wrap to the next line if needed */
+}
+
+.bar {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    margin: 20px;
+    text-align: center;
+}
+
+.bar i {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.progress-line {
+    position: relative;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-line span {
+    display: block;
+    height: 100%;
+    background-color: #ff6666; /* Default color for the progress */
+    width: 0; /* Start with 0 width and animate */
+    border-radius: 10px;
+    transition: width 1s ease;
+    animation: fill-progress 1s forwards; /* Animation to fill the progress */
+}
+.html span {
+    background-color: #c95d2e; /* HTML color */
+}
+
+.css span {
+    background-color: #147bbc; /* CSS color */
+}
+
+.javascript span {
+    background-color: #b0bc1e; /* JavaScript color */
+}
+
+.python span {
+    background-color: #c32ec9; /* Python color */
+}
+
+.php span {
+    background-color: #69bcbc; /* PHP color */
+}
+
+.counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #99ff99;
+    animation: counter-up 1s forwards; /* Animation for counter-up effect */
+}
+
+/* Keyframes for filling progress bar */
+@keyframes fill-progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress);
+    }
+}
+
+/* Keyframes for counter-up animation */
+@keyframes counter-up {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.radial-bars {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.radial-bar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.radial-bar svg {
+    transform: rotate(-90deg);
+}
+
+.progress-bar {
+    fill: none;
+    stroke: #e6e6e6;
+    stroke-width: 15;
+}
+
+.path {
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+    stroke-dasharray: 502.65; /* Circumference of the circle */
+    stroke-dashoffset: 502.65; /* Initially hide the stroke */
+    transition: stroke-dashoffset 1s ease;
+}
+
+.path-1 { stroke: #ff6666; }
+.path-2 { stroke: #66b3ff; }
+.path-3 { stroke: #99ff99; }
+.path-4 { stroke: #ffcc66; }
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+@keyframes counter-up {
+    from {
+        content: "0%";
+    }
+    to {
+        content: attr(data-value) "%";
+    }
+}
+
+.percentage {
+    animation: counter-up 1s forwards;
+}
+.radial-bar {
+    position: relative;
+}
+
+.path {
+    stroke-dashoffset: calc(502.65 - (502.65 * var(--percentage) / 100));
+}
+.projects {
+    padding: 50px 10%;
+    background: #f4f4f4;
+}
+
+.projects .heading1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(50% - 20px); /* Adjust as needed */
+    max-width: 500px;
+    margin: 10px;
+}
+
+.project img {
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project-info .btn-box {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #147bbc;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-info .btn-box:hover {
+    background: #0f5b9a;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #081b29;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #063d5a;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #ddd;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
